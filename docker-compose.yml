@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  fastapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ml_api_container
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src:/app/src
+      - ./models:/app/models    # <--- CRUCIAL VOLUME MOUNTING LINE
+      - ./data:/app/data
+    command: uvicorn src.api:app --host 0.0.0.0 --port 8000 --reload
+    # Optional: Increase connection timeout if needed for large requests
+    # environment:
+    #   - UVICORN_TIMEOUT_KEEP_ALIVE=120
+
+  streamlit:
+    build:
+      context: .
+      dockerfile: Dockerfile.ui
+    container_name: ml_ui_container
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./ui:/app/ui
+      - ./data:/app/data
+    command: streamlit run ui/app.py --server.port 8501 --server.enableCORS false
