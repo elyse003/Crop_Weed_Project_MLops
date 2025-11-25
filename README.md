@@ -114,29 +114,13 @@ URL: http://localhost:8000/docs
 
 Key Endpoints to Test:
 
-Endpoint
+| Endpoint   | Method | Purpose                                      |
+|-----------|--------|----------------------------------------------|
+| /         | GET    | Health Check (should return `{"model_loaded": true}`) |
+| /predict  | POST   | Uploads image and returns ML classification. |
+| /retrain  | POST   | Triggers the background retraining process.  |
 
-Method
 
-Purpose
-
-/
-
-GET
-
-Health Check (should return {"model_loaded": true})
-
-/predict
-
-POST
-
-Uploads image and returns ML classification.
-
-/retrain
-
-POST
-
-Triggers the background retraining process.
 
 3. Load Testing (Locust)
 
