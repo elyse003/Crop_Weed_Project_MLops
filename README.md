@@ -4,47 +4,21 @@ This project deploys a Machine Learning model for identifying 'Crop' or 'Weed' i
 
 The application also includes a background retraining endpoint, allowing the model to be updated with newly uploaded data.
 
- Project Architecture
+## Project Architecture
 
-Component
+| Component      | Technology            | Role                                                     | Port |
+|----------------|------------------------|-----------------------------------------------------------|------|
+| Backend (API)  | FastAPI, TensorFlow/Keras | Serves predictions and handles retraining/data upload. | 8000 |
+| Frontend (UI)  | Streamlit             | Provides the user interface for image upload and result display. | 8501 |
+| Load Testing   | Locust                | Used to simulate user traffic and test API performance.  | 8089 |
 
-Technology
-
-Role
-
-Port
-
-Backend (API)
-
-FastAPI, TensorFlow/Keras
-
-Serves predictions and handles retraining/data upload.
-
-8000
-
-Frontend (UI)
-
-Streamlit
-
-Provides the user interface for image upload and result display.
-
-8501
-
-Load Testing
-
-Locust
-
-Used to simulate user traffic and test API performance.
-
-8089
-
- Prerequisites
+## Prerequisites
 
 Before deployment, ensure you have the following installed on your system:
 
-Docker Desktop: (Includes Docker Engine and Docker Compose)
+- **Docker Desktop** – includes Docker Engine and Docker Compose  
+- **Git** – for version control and cloning the repository
 
-Git: (For version control and cloning the repository)
 
  ##  Project Structure
 
@@ -69,13 +43,14 @@ This structure ensures all volume mounts in docker-compose.yml work correctly:
 
 
 
-⚙️ Setup and Deployment
+
+## Setup and Deployment
 
 Step 1: Clone the Repository
 
 Clone this repository and change into the project directory:
 
-git clone <Yhttps://github.com/elyse003/Crop_Weed_Project_MLops.git>
+git clone <https://github.com/elyse003/Crop_Weed_Project_MLops.git>
 cd CropWeedProject
 
 
@@ -100,7 +75,7 @@ docker ps
 
 The output should show ml_api_container and ml_ui_container with status Up.
 
-🧪 Usage and Testing
+## Usage and Testing
 
 1. Web Application (Streamlit UI)
 
@@ -136,4 +111,7 @@ locust -f locustfile.py --host=http://localhost:8000
 Access the Locust UI: http://localhost:8089
 
 Start a swarm (e.g., 50 users) and monitor the API's performance and stability.
+
+## AUTHOR
+ Marie Elyse Uyiringiye
 
