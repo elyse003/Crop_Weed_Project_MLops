@@ -79,7 +79,7 @@ Step 1: Clone the Repository
 
 Clone this repository and change into the project directory:
 
-git clone <YOUR_REPO_URL>
+git clone <Yhttps://github.com/elyse003/Crop_Weed_Project_MLops.git>
 cd CropWeedProject
 
 
