@@ -50,26 +50,22 @@ Git: (For version control and cloning the repository)
 
 This structure ensures all volume mounts in docker-compose.yml work correctly:
 
-.
-├── src/ # Backend Python files
-│ ├── api.py # FastAPI app definitions
-│ ├── train.py # Retraining pipeline (uses relative paths)
-│ ├── preprocessing.py # Image processing utility
-│ └── init.py # Makes 'src' a Python package
-│
-├── models/ # Volume for the ML model
-│ └── crop_weed_model.h5 # The trained model file (CRUCIAL)
-│
-├── data/ # Volume for training data
-│ └── train/ # Data used by the retraining pipeline
-│
-├── ui/
-│ └── app.py # Streamlit front-end application
-│
-├── docker-compose.yml # Orchestrates the two services
-├── Dockerfile # Dockerfile for the FastAPI service
-└── Dockerfile.ui # Dockerfile for the Streamlit service
-
+```markdown
+    .
+    ├── src/                     # Backend Python files
+    │   ├── api.py               # FastAPI app definitions
+    │   ├── train.py             # Retraining pipeline
+    │   ├── preprocessing.py     # Image processing utility
+    │   └── __init__.py          # Makes 'src' a Python package
+    ├── models/                  # Volume for the ML model
+    │   └── crop_weed_model.h5   # The trained model file (CRUCIAL)
+    ├── data/                    # Volume for training data
+    │   └── train/
+    ├── ui/
+    │   └── app.py               # Streamlit front-end app
+    ├── docker-compose.yml
+    ├── Dockerfile
+    └── Dockerfile.ui
 
 
 
