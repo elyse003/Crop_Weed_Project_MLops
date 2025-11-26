@@ -24,8 +24,8 @@ with tab2:
     st.header("Data Insights")
     # Simple logic to count files for visualization
     try:
-        crop_count = len(os.listdir('data/train/crop'))
-        weed_count = len(os.listdir('data/train/weed'))
+        crop_count = len(os.listdir('dataset/train/crop'))
+        weed_count = len(os.listdir('dataset/train/weed'))
         st.bar_chart(pd.DataFrame({'Count': [crop_count, weed_count]}, index=['Crop', 'Weed']))
     except:
         st.warning("Could not access data folder directly for counting.")
