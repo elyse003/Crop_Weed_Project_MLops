@@ -153,8 +153,10 @@ Access the Locust UI: http://localhost:8089
 Start a swarm (e.g., 50 users) and monitor the API's performance and stability.
 
 
-
+```
 ![LOCUST](assets/locust.png)
+
+```
 
 ## AUTHOR
  Marie Elyse Uyiringiye
