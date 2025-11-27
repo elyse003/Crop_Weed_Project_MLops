@@ -61,9 +61,9 @@ This structure ensures all volume mounts in docker-compose.yml work correctly:
 ##  Sample Images
 
 Below are example images from each class in the dataset:
+```
 
-
-![Sample Image](https://github.com/elyse003/Crop_Weed_Project_MLops/blob/main/assets/sample_Image.png)
+![Sample Image](assets/sample_Image.png)
 
 
 
@@ -72,7 +72,7 @@ Below are example images from each class in the dataset:
 ![Training Curves](assets/graphs.png)
 
 ![Confusion Matrix](assets/outputconfusion_matrix.png)
-
+```
 
 
 ##  Insights From Dataset Exploration
