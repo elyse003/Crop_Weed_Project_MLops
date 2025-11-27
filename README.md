@@ -62,16 +62,16 @@ This structure ensures all volume mounts in docker-compose.yml work correctly:
 
 Below are example images from each class in the dataset:
 
-<p>
-  <img src="assets/sample_Image.png" width="300" />
- </p>
+
+![Sample Image](assets/sample_Image.png)
 
 ---
+
 ##  Training Curves and Confusion Matrix
 
-<img src="assets/graphs.png" width="600">
+![Training Curves](assets/graphs.png)
 
-<img src="assets/outputconfusion_matrix.png" width="600">
+![Confusion Matrix](assets/outputconfusion_matrix.png)
 
 ---
 
