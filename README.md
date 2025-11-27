@@ -62,8 +62,8 @@ This structure ensures all volume mounts in docker-compose.yml work correctly:
 
 Below are example images from each class in the dataset:
 
-<p float="left">
-  <img src="assets/sample Image.png" width="300" />
+<p>
+  <img src="assets/sample_Image.png" width="300" />
  </p>
 
 ---
@@ -71,7 +71,7 @@ Below are example images from each class in the dataset:
 
 <img src="assets/graphs.png" width="600">
 
-<img src="assets/outputconfusion matrix.png" width="600">
+<img src="assets/outputconfusion_matrix.png" width="600">
 
 ---
 
@@ -91,7 +91,7 @@ Step 1: Clone the Repository
 
 Clone this repository and change into the project directory:
 
-git clone <https://github.com/elyse003/Crop_Weed_Project_MLops.git>
+git clone  [Repo Here](https://github.com/elyse003/Crop_Weed_Project_MLops.git)
 cd CropWeedProject
 
 
