@@ -63,7 +63,7 @@ This structure ensures all volume mounts in docker-compose.yml work correctly:
 Below are example images from each class in the dataset:
 
 
-![Sample Image](<https://github.com/elyse003/Crop_Weed_Project_MLops/blob/main/assets/sample_Image.png>)
+![Sample Image](assets/sample_Image.png)
 
 ---
 
@@ -91,8 +91,7 @@ Step 1: Clone the Repository
 
 Clone this repository and change into the project directory:
 
-git clone  [Repo Here](https://github.com/elyse003/Crop_Weed_Project_MLops.git)
-cd CropWeedProject
+git clone: [REPO Here](https://github.com/elyse003/Crop_Weed_Project_MLops.git)
 
 
 Step 2: Ensure Model Availability
