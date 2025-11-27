@@ -4,6 +4,21 @@ This project deploys a Machine Learning model for identifying 'Crop' or 'Weed' i
 
 The application also includes a background retraining endpoint, allowing the model to be updated with newly uploaded data.
 
+
+##  Demo Video
+
+A short demo has been recorded to showcase how the system works end-to-end:
+
+ **Demo Link:** [Watch Here](https://youtu.be/sjKvj4LC3d4)
+
+The video covers:
+- API prediction workflow  
+- Streamlit UI usage  
+- Uploading training data  
+- Triggering retraining  
+- System architecture overview  
+
+
 ## Project Architecture
 
 | Component      | Technology            | Role                                                     | Port |
@@ -41,7 +56,33 @@ This structure ensures all volume mounts in docker-compose.yml work correctly:
     ├── Dockerfile
     └── Dockerfile.ui
 
+## DATSET EXPLORATION AND MODEL TRAINING VISUALS
 
+##  Sample Images
+
+Below are example images from each class in the dataset:
+
+<p float="left">
+  <img src="assets/sample Image.png" width="300" />
+ </p>
+
+---
+##  Training Curves and Confusion Matrix
+
+<img src="assets/graphs.png" width="600">
+
+<img src="assets/outputconfusion matrix.png" width="600">
+
+---
+
+##  Insights From Dataset Exploration
+
+- The dataset is visually well-separated between crop and weed images.  
+- Preprocessing increases consistency and improves training quality.  
+- No major class imbalance if both classes have similar counts.  
+- Training curves help identify underfitting/overfitting and guide retraining.  
+
+---
 
 
 ## Setup and Deployment
