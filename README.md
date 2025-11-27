@@ -175,7 +175,7 @@ Note: In the Docker setup, this runs automatically via Gunicorn.
 cd src
 uvicorn api:app --host 0.0.0.0 --port 8000
 
-
+```
 URL: http://localhost:8000/docs
 
 Key Endpoints to Test:
@@ -194,7 +194,9 @@ If you have test images prepared in your local directory, you can run the load t
 
 Run the Locust command from your project root:
 ```
-locust -f locustfile.py --host=http://localhost:8000
+locust -f locustfile.py
+```
+ --host=http://localhost:8000
 ```
 
 Access the Locust UI: http://localhost:8089
