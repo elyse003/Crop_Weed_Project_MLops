@@ -90,9 +90,9 @@ Below are example images from each class in the dataset:
 Step 1: Clone the Repository
 
 Clone this repository and change into the project directory:
-
-git clone: [REPO Here](https://github.com/elyse003/Crop_Weed_Project_MLops.git)
-
+```
+git clone: (https://github.com/elyse003/Crop_Weed_Project_MLops.git)
+```
 
 Step 2: Ensure Model Availability
 
@@ -152,6 +152,9 @@ Access the Locust UI: http://localhost:8089
 
 Start a swarm (e.g., 50 users) and monitor the API's performance and stability.
 
+## Results from Flood Request Simulation
+
+The image below shows the outcome of our flood request simulation, demonstrating how the system handled multiple simultaneous requests. The visualization highlights response times, failed requests (if any), and overall system performance under stress.
 
 ```
 ![LOCUST](assets/locust.png)
@@ -161,3 +164,4 @@ Start a swarm (e.g., 50 users) and monitor the API's performance and stability.
 ## AUTHOR
  Marie Elyse Uyiringiye
 
+Thank you!!
