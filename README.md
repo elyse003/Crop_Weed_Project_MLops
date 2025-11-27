@@ -87,8 +87,6 @@ Below are example images from each class in the dataset:
 
 ## Setup and Deployment
 
-Step 1: Clone the Repository
-
 Requirements
 
 Python 3.9+
@@ -106,6 +104,7 @@ Pillow, numpy (for preprocessing)
 Install dependencies:
 
 Dependencies are installed within the Docker containers, but if running locally for development:
+
 ```
 pip install -r requirements.txt
 ```
@@ -121,6 +120,7 @@ You must place a pre-trained crop_weed_model.h5 file inside the ./models directo
 Deploy with Docker Compose
 
 Run the following command in your project root to build the images and start both the FastAPI and Streamlit containers in the background:
+
 ```
 #The --build flag forces the images to be rebuilt with the latest code
 docker-compose up --build -d
@@ -129,6 +129,7 @@ docker-compose up --build -d
 Verify Deployment Status
 
 Check that both containers are running:
+
 ```
 docker ps
 ```
