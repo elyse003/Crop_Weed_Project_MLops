@@ -74,7 +74,7 @@ Below are example images from each class in the dataset:
 ![Confusion Matrix](assets/outputconfusion_matrix.png)
 ```
 
-
+```
 ##  Insights From Dataset Exploration
 
 - The dataset is visually well-separated between crop and weed images.  
@@ -107,8 +107,8 @@ Dependencies are installed within the Docker containers, but if running locally 
 
 ```
 pip install -r requirements.txt
-```
 
+```
 Running the App (Via Docker Compose)
 
 The recommended deployment method uses Docker Compose to manage both the scaled FastAPI API and the Streamlit UI.
@@ -123,18 +123,18 @@ Run the following command in your project root to build the images and start bot
 
 ```
 #The --build flag forces the images to be rebuilt with the latest code
-docker-compose up --build -d
-```
 
+docker-compose up --build -d
+
+```
 Verify Deployment Status
 
 Check that both containers are running:
 
 ```
 docker ps
+
 ```
-
-
 The output should show ml_api_container and ml_ui_container with status Up.
 
 ## Usage and Testing
@@ -174,7 +174,7 @@ Note: In the Docker setup, this runs automatically via Gunicorn.
 ```
 cd src
 uvicorn api:app --host 0.0.0.0 --port 8000
-```
+
 
 URL: http://localhost:8000/docs
 
