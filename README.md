@@ -65,7 +65,7 @@ Below are example images from each class in the dataset:
 
 ![Sample Image](assets/sample_Image.png)
 
----
+
 
 ##  Training Curves and Confusion Matrix
 
@@ -73,7 +73,7 @@ Below are example images from each class in the dataset:
 
 ![Confusion Matrix](assets/outputconfusion_matrix.png)
 
----
+
 
 ##  Insights From Dataset Exploration
 
