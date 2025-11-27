@@ -63,7 +63,7 @@ This structure ensures all volume mounts in docker-compose.yml work correctly:
 Below are example images from each class in the dataset:
 
 
-![Sample Image](assets/sample_Image.png)
+![Sample Image](https://github.com/elyse003/Crop_Weed_Project_MLops/blob/main/assets/sample_Image.png)
 
 
 
