@@ -69,7 +69,7 @@ Below are example images from each class in the dataset:
 
 ##  Training Curves and Confusion Matrix
 
-![Training Curves](assets/)
+![Training Curves](assets/graphs.png)
 
 ![Confusion Matrix](assets/outputconfusion_matrix.png)
 
